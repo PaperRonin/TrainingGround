@@ -11,3 +11,16 @@ C:\Users\Миша\source\repos\Polymorwho\Polymorwho\bin\Debug\netcoreapp3.1\Pol
 C:\Users\Миша\source\repos\Polymorwho\Polymorwho\obj\Debug\netcoreapp3.1\Polymorwho.dll
 C:\Users\Миша\source\repos\Polymorwho\Polymorwho\obj\Debug\netcoreapp3.1\Polymorwho.pdb
 C:\Users\Миша\source\repos\Polymorwho\Polymorwho\obj\Debug\netcoreapp3.1\Polymorwho.genruntimeconfig.cache
+C:\Users\Миша\source\repos\HW\Polymorwho\Polymorwho\bin\Debug\netcoreapp3.1\Polymorwho.exe
+C:\Users\Миша\source\repos\HW\Polymorwho\Polymorwho\bin\Debug\netcoreapp3.1\Polymorwho.deps.json
+C:\Users\Миша\source\repos\HW\Polymorwho\Polymorwho\bin\Debug\netcoreapp3.1\Polymorwho.runtimeconfig.json
+C:\Users\Миша\source\repos\HW\Polymorwho\Polymorwho\bin\Debug\netcoreapp3.1\Polymorwho.runtimeconfig.dev.json
+C:\Users\Миша\source\repos\HW\Polymorwho\Polymorwho\bin\Debug\netcoreapp3.1\Polymorwho.dll
+C:\Users\Миша\source\repos\HW\Polymorwho\Polymorwho\bin\Debug\netcoreapp3.1\Polymorwho.pdb
+C:\Users\Миша\source\repos\HW\Polymorwho\Polymorwho\obj\Debug\netcoreapp3.1\Polymorwho.csprojAssemblyReference.cache
+C:\Users\Миша\source\repos\HW\Polymorwho\Polymorwho\obj\Debug\netcoreapp3.1\Polymorwho.AssemblyInfoInputs.cache
+C:\Users\Миша\source\repos\HW\Polymorwho\Polymorwho\obj\Debug\netcoreapp3.1\Polymorwho.AssemblyInfo.cs
+C:\Users\Миша\source\repos\HW\Polymorwho\Polymorwho\obj\Debug\netcoreapp3.1\Polymorwho.csproj.CoreCompileInputs.cache
+C:\Users\Миша\source\repos\HW\Polymorwho\Polymorwho\obj\Debug\netcoreapp3.1\Polymorwho.dll
+C:\Users\Миша\source\repos\HW\Polymorwho\Polymorwho\obj\Debug\netcoreapp3.1\Polymorwho.pdb
+C:\Users\Миша\source\repos\HW\Polymorwho\Polymorwho\obj\Debug\netcoreapp3.1\Polymorwho.genruntimeconfig.cache

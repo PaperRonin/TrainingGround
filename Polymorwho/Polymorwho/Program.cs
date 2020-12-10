@@ -84,7 +84,7 @@ namespace Polymorwho
     public class DoubleDerivedCracked : DoubleDerived
     {
         private ConsoleColor color = ConsoleColor.Cyan;
-        public override void VirtualMethod1()
+        public new void VirtualMethod1()
         {
             var type = typeof(BaseClass);
             MethodInfo method = type.GetMethod("VirtualMethod1");
@@ -99,7 +99,7 @@ namespace Polymorwho
         {
             DoubleDerivedCracked instance = new DoubleDerivedCracked();
 
-            BaseClass instance2 = new DoubleDerived();
+            BaseClass instance2 = new BaseClass();
 
             instance.VirtualMethod1();
             instance.VirtualMethod2();

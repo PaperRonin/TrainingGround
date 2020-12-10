@@ -1,0 +1,7 @@
+C:\Users\Миша\source\repos\HW\ThreadsHW\ThreadsHW\bin\Debug\ThreadsHW.exe.config
+C:\Users\Миша\source\repos\HW\ThreadsHW\ThreadsHW\bin\Debug\ThreadsHW.exe
+C:\Users\Миша\source\repos\HW\ThreadsHW\ThreadsHW\bin\Debug\ThreadsHW.pdb
+C:\Users\Миша\source\repos\HW\ThreadsHW\ThreadsHW\obj\Debug\ThreadsHW.csprojAssemblyReference.cache
+C:\Users\Миша\source\repos\HW\ThreadsHW\ThreadsHW\obj\Debug\ThreadsHW.csproj.CoreCompileInputs.cache
+C:\Users\Миша\source\repos\HW\ThreadsHW\ThreadsHW\obj\Debug\ThreadsHW.exe
+C:\Users\Миша\source\repos\HW\ThreadsHW\ThreadsHW\obj\Debug\ThreadsHW.pdb

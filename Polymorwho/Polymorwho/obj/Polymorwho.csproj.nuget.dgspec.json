@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Миша\\source\\repos\\Polymorwho\\Polymorwho\\Polymorwho.csproj": {}
+    "C:\\Users\\Миша\\source\\repos\\HW\\Polymorwho\\Polymorwho\\Polymorwho.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Миша\\source\\repos\\Polymorwho\\Polymorwho\\Polymorwho.csproj": {
+    "C:\\Users\\Миша\\source\\repos\\HW\\Polymorwho\\Polymorwho\\Polymorwho.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Миша\\source\\repos\\Polymorwho\\Polymorwho\\Polymorwho.csproj",
+        "projectUniqueName": "C:\\Users\\Миша\\source\\repos\\HW\\Polymorwho\\Polymorwho\\Polymorwho.csproj",
         "projectName": "Polymorwho",
-        "projectPath": "C:\\Users\\Миша\\source\\repos\\Polymorwho\\Polymorwho\\Polymorwho.csproj",
+        "projectPath": "C:\\Users\\Миша\\source\\repos\\HW\\Polymorwho\\Polymorwho\\Polymorwho.csproj",
         "packagesPath": "C:\\Users\\Миша\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Миша\\source\\repos\\Polymorwho\\Polymorwho\\obj\\",
+        "outputPath": "C:\\Users\\Миша\\source\\repos\\HW\\Polymorwho\\Polymorwho\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
