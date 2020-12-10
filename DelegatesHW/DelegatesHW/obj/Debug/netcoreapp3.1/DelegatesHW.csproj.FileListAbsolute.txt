@@ -1,0 +1,13 @@
+C:\Users\Миша\source\repos\HW\DelegatesHW\DelegatesHW\bin\Debug\netcoreapp3.1\DelegatesHW.exe
+C:\Users\Миша\source\repos\HW\DelegatesHW\DelegatesHW\bin\Debug\netcoreapp3.1\DelegatesHW.deps.json
+C:\Users\Миша\source\repos\HW\DelegatesHW\DelegatesHW\bin\Debug\netcoreapp3.1\DelegatesHW.runtimeconfig.json
+C:\Users\Миша\source\repos\HW\DelegatesHW\DelegatesHW\bin\Debug\netcoreapp3.1\DelegatesHW.runtimeconfig.dev.json
+C:\Users\Миша\source\repos\HW\DelegatesHW\DelegatesHW\bin\Debug\netcoreapp3.1\DelegatesHW.dll
+C:\Users\Миша\source\repos\HW\DelegatesHW\DelegatesHW\bin\Debug\netcoreapp3.1\DelegatesHW.pdb
+C:\Users\Миша\source\repos\HW\DelegatesHW\DelegatesHW\obj\Debug\netcoreapp3.1\DelegatesHW.csprojAssemblyReference.cache
+C:\Users\Миша\source\repos\HW\DelegatesHW\DelegatesHW\obj\Debug\netcoreapp3.1\DelegatesHW.AssemblyInfoInputs.cache
+C:\Users\Миша\source\repos\HW\DelegatesHW\DelegatesHW\obj\Debug\netcoreapp3.1\DelegatesHW.AssemblyInfo.cs
+C:\Users\Миша\source\repos\HW\DelegatesHW\DelegatesHW\obj\Debug\netcoreapp3.1\DelegatesHW.csproj.CoreCompileInputs.cache
+C:\Users\Миша\source\repos\HW\DelegatesHW\DelegatesHW\obj\Debug\netcoreapp3.1\DelegatesHW.dll
+C:\Users\Миша\source\repos\HW\DelegatesHW\DelegatesHW\obj\Debug\netcoreapp3.1\DelegatesHW.pdb
+C:\Users\Миша\source\repos\HW\DelegatesHW\DelegatesHW\obj\Debug\netcoreapp3.1\DelegatesHW.genruntimeconfig.cache
