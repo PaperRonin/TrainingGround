@@ -1,0 +1,15 @@
+C:\Users\Миша\source\repos\AsyncMockDB\AsyncMockDB\bin\Debug\AsyncMockDB.exe.config
+C:\Users\Миша\source\repos\AsyncMockDB\AsyncMockDB\bin\Debug\AsyncMockDB.exe
+C:\Users\Миша\source\repos\AsyncMockDB\AsyncMockDB\bin\Debug\AsyncMockDB.pdb
+C:\Users\Миша\source\repos\AsyncMockDB\AsyncMockDB\obj\Debug\AsyncMockDB.csprojAssemblyReference.cache
+C:\Users\Миша\source\repos\AsyncMockDB\AsyncMockDB\obj\Debug\MainWindow.g.cs
+C:\Users\Миша\source\repos\AsyncMockDB\AsyncMockDB\obj\Debug\App.g.cs
+C:\Users\Миша\source\repos\AsyncMockDB\AsyncMockDB\obj\Debug\AsyncMockDB_MarkupCompile.cache
+C:\Users\Миша\source\repos\AsyncMockDB\AsyncMockDB\obj\Debug\AsyncMockDB_MarkupCompile.lref
+C:\Users\Миша\source\repos\AsyncMockDB\AsyncMockDB\obj\Debug\MainWindow.baml
+C:\Users\Миша\source\repos\AsyncMockDB\AsyncMockDB\obj\Debug\AsyncMockDB.g.resources
+C:\Users\Миша\source\repos\AsyncMockDB\AsyncMockDB\obj\Debug\AsyncMockDB.Properties.Resources.resources
+C:\Users\Миша\source\repos\AsyncMockDB\AsyncMockDB\obj\Debug\AsyncMockDB.csproj.GenerateResource.cache
+C:\Users\Миша\source\repos\AsyncMockDB\AsyncMockDB\obj\Debug\AsyncMockDB.csproj.CoreCompileInputs.cache
+C:\Users\Миша\source\repos\AsyncMockDB\AsyncMockDB\obj\Debug\AsyncMockDB.exe
+C:\Users\Миша\source\repos\AsyncMockDB\AsyncMockDB\obj\Debug\AsyncMockDB.pdb
