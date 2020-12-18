@@ -7,11 +7,12 @@ namespace dbApp.DataBase
     {
         public DbSet<Employee> Employees { get; set; }
         public DbSet<ProjectEmployee> ProjectEmployees { get; set; }
-        public DbSet<Project> Projects { get; set; } 
+        public DbSet<Project> Projects { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb; Database=AppDB;Trusted_Connection= true");
+            optionsBuilder
+                .UseSqlServer("Server=(localdb)\\mssqllocaldb; Database=AppDB;Trusted_Connection= true");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
