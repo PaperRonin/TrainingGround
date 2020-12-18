@@ -21,7 +21,8 @@ namespace WebHW.Controllers
 
         public IActionResult Index()
         {
-            ViewData["ServerInfo"] = Environment.OSVersion;
+            ViewData["UserGuidProvider"] = Environment.OSVersion;
+            ViewData["ViewCount"] = GlobalVariables.ViewCount;
             return View();
         }
 

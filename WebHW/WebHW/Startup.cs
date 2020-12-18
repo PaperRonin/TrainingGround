@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WebHW.Middleware;
 
 namespace WebHW
 {
@@ -28,6 +29,8 @@ namespace WebHW
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UserGuidProvider();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -37,6 +40,7 @@ namespace WebHW
                 app.UseExceptionHandler("/Home/Error");
             }
             app.UseStaticFiles();
+
 
             app.UseMvc(endpoint =>
             {
