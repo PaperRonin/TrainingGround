@@ -28,9 +28,9 @@ namespace WebHW
         {
             services.AddDbContext<WebHwDbContext>(x =>
                 x.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddMvc(options => options.EnableEndpointRouting = false);
             services.AddTransient<IProjectService, ProjectRepository>();
             services.AddTransient<IEmployeeService, EmployeeRepository>();
-            services.AddMvc(options => options.EnableEndpointRouting = false);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

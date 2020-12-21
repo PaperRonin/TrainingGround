@@ -8,18 +8,11 @@ namespace WebHW
 {
     public class WebHwDbContext : DbContext
     {
-        public WebHwDbContext()
-        {
-        }
+        public WebHwDbContext(DbContextOptions<WebHwDbContext> options) : base(options) { }
 
-        public WebHwDbContext(DbContextOptions<WebHwDbContext> options)
-            : base(options)
-        {
-        }
-
-        public virtual DbSet<Employee> Employees { get; set; }
-        public virtual DbSet<Project> Projects { get; set; }
-        public virtual DbSet<ProjectEmployee> ProjectEmployees { get; set; }
+        public DbSet<Employee> Employees { get; set; }
+        public DbSet<Project> Projects { get; set; }
+        public DbSet<ProjectEmployee> ProjectEmployees { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

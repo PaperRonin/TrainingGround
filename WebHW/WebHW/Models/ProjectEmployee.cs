@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace WebHW
 {
-    public partial class ProjectEmployee
+    public class ProjectEmployee
     {
         public int ProjectId { get; set; }
         public int EmployeeId { get; set; }

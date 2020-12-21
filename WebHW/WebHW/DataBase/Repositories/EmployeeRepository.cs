@@ -7,17 +7,14 @@ using WebHW.Services;
 namespace WebHW.Repositories
 {
     public class EmployeeRepository : IEmployeeService
-    {
-        private List<Employee> Employees { get; }
+    {   
         private WebHwDbContext DbContext { get; }
-        public EmployeeRepository()
+        public EmployeeRepository(WebHwDbContext context)
         {
-            DbContext = new WebHwDbContext();
-            Employees = DbContext.Employees.Include(e => e.ProjectEmployees).ThenInclude(pe => pe.Project).ToList();
+            DbContext = context;
         }
 
-        public IEnumerable<Employee> ListEmployees()=> Employees;
-
+        public IEnumerable<Employee> ListEmployees() => DbContext.Employees.ToList();
         public string Add(Employee employee)
         {
             try
@@ -35,11 +32,15 @@ namespace WebHW.Repositories
             return "OK";
         }
 
-        public Employee Find(int id) => Employees.Find(employee => employee.Id == id);
+        public Employee Find(int id) => DbContext.Employees.
+            Include(e => e.ProjectEmployees).
+            ThenInclude(pe => pe.Project).
+            FirstOrDefault(employee => employee.Id == id);
 
         public void Remove(int id)
         {
-            var employeeToDelete = Employees.Find(employee => employee.Id == id);
+            var employeeToDelete = DbContext.Employees.FirstOrDefault(employee => employee.Id == id);
+            if (employeeToDelete == null) return;
             DbContext.Employees.Remove(employeeToDelete);
             DbContext.SaveChanges();
         }

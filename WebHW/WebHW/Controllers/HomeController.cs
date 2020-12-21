@@ -7,6 +7,7 @@ using System.Linq;
 using System.Net.Mime;
 using System.Threading.Tasks;
 using WebHW.Models;
+using WebHW.Repositories;
 using WebHW.Services;
 
 namespace WebHW.Controllers
@@ -27,9 +28,16 @@ namespace WebHW.Controllers
             return View();
         }
 
-        public IActionResult DataBase(IProjectService projectService, IEmployeeService employeeService)
+        public IActionResult EmployeeProjects([FromServices] IEmployeeService employeeService, int id)
         {
-            ViewData["employees"] = employeeService.ListEmployees().ToList();
+            var t = employeeService.Find(id);
+            return View(t);
+        }
+
+        public IActionResult DataBase([FromServices] IEmployeeService employeeService, [FromServices] IProjectService projectService)
+        {
+            ViewBag.Employees = employeeService.ListEmployees().ToList();
+            ViewBag.Projects = projectService.ListProjects().ToList();
             return View();
         }
 

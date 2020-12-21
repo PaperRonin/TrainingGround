@@ -19,6 +19,19 @@ namespace WebHW
         public string StartDate { get; set; }
         public string EndDate { get; set; }
         public string Priority { get; set; }
+        public IEnumerable<Employee> Employees
+        {
+            get
+            {
+                var list = new List<Employee>();
+                foreach (var pe in ProjectEmployees)
+                {
+                    list.Add(pe.Employee);
+                }
+
+                return list;
+            }
+        }
 
         public virtual ICollection<ProjectEmployee> ProjectEmployees { get; set; }
     }

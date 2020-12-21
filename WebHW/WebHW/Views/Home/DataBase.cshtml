@@ -1,6 +1,32 @@
 ﻿@{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "DataBase";
 }
 <h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Company</th>
+            <th scope="col">Address</th>
+            <th scope="col">Projects</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Employee employee in ViewBag.Employees)
+        {
+            <tr>
+                <td>@employee.Id</td>
+                <td>@employee.Name</td>
+                <td>@employee.Email</td>
+                <td>@employee.Phone</td>
+                <td>@employee.Company</td>
+                <td>@employee.Address</td>
+                <td>@Html.ActionLink("View", "EmployeeProjects", employee.Id, new { @class = "nav-link text-dark"})</td>
+            </tr>
+        }
+    </tbody>
+</table>

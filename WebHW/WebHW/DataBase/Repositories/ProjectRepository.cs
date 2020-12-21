@@ -8,16 +8,13 @@ namespace WebHW.Repositories
 {
     public class ProjectRepository : IProjectService
     {
-        private List<Project> Projects { get; }
         private WebHwDbContext DbContext { get; }
-
-        public ProjectRepository()
+        public ProjectRepository(WebHwDbContext context)
         {
-            DbContext = new WebHwDbContext();
-            Projects = DbContext.Projects.Include(e => e.ProjectEmployees).ThenInclude(pe => pe.Employee).ToList();
+            DbContext = context;
         }
 
-        public IEnumerable<Project> ListProjects() => Projects;
+        public IEnumerable<Project> ListProjects() => DbContext.Projects.ToList();
         public string Add(Project project)
         {
             try
@@ -35,12 +32,16 @@ namespace WebHW.Repositories
             return "OK";
         }
 
-        public Project Find(int id) => Projects.Find(project => project.Id == id);
+        public Project Find(int id) => DbContext.Projects.
+            Include(e => e.ProjectEmployees.Where(pe => pe.ProjectId == id)).
+            ThenInclude(pe => pe.Employee).
+            FirstOrDefault(project => project.Id == id);
 
         public void Remove(int id)
         {
-            var projectToDelete = Projects.Find(employee => employee.Id == id);
-            DbContext.Projects.Remove(projectToDelete);
+            var projectToDelete = DbContext.Projects.FirstOrDefault(employee => employee.Id == id);
+            if (projectToDelete == null) return;
+            DbContext.Projects?.Remove(projectToDelete);
             DbContext.SaveChanges();
         }
 
