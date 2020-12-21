@@ -7,7 +7,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using WebHW.Middleware;
+using WebHW.Repositories;
+using WebHW.Services;
 
 namespace WebHW
 {
@@ -23,6 +26,10 @@ namespace WebHW
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<WebHwDbContext>(x =>
+                x.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddTransient<IProjectService, ProjectRepository>();
+            services.AddTransient<IEmployeeService, EmployeeRepository>();
             services.AddMvc(options => options.EnableEndpointRouting = false);
         }
 

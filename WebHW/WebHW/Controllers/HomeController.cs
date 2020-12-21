@@ -7,6 +7,7 @@ using System.Linq;
 using System.Net.Mime;
 using System.Threading.Tasks;
 using WebHW.Models;
+using WebHW.Services;
 
 namespace WebHW.Controllers
 {
@@ -26,8 +27,9 @@ namespace WebHW.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult DataBase(IProjectService projectService, IEmployeeService employeeService)
         {
+            ViewData["employees"] = employeeService.ListEmployees().ToList();
             return View();
         }
 
