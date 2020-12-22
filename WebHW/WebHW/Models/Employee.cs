@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 #nullable disable
 
@@ -19,7 +20,7 @@ namespace WebHW
         public string Phone { get; set; }
         public string Address { get; set; }
         public string Email { get; set; }
-
+        [NotMapped]
         public IEnumerable<Project> Projects
         {
             get

@@ -8,7 +8,7 @@ using WebHW.Services;
 namespace WebHW.Repositories
 {
     public class EmployeeRepository : IEmployeeService
-    {   
+    {
         private WebHwDbContext DbContext { get; }
         public EmployeeRepository(WebHwDbContext context)
         {
@@ -33,9 +33,11 @@ namespace WebHW.Repositories
             return "OK";
         }
 
-        public Employee Find(int id) => DbContext.Employees.
-            Include(e => e.ProjectEmployees).
-            ThenInclude(pe => pe.Project).FirstOrDefault(employee => employee.Id == id);
+        public Employee Find(int id) =>
+            DbContext.Employees
+                .Include(e => e.ProjectEmployees.Where(pe => pe.EmployeeId == id))
+                .ThenInclude(pe => pe.Project)
+                .FirstOrDefault(employee => employee.Id == id);
 
         public void Remove(int id)
         {

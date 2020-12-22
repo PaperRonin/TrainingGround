@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 #nullable disable
 
@@ -19,6 +20,7 @@ namespace WebHW
         public string StartDate { get; set; }
         public string EndDate { get; set; }
         public string Priority { get; set; }
+        [NotMapped]
         public IEnumerable<Employee> Employees
         {
             get
