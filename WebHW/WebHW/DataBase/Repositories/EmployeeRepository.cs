@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.EntityFrameworkCore;
 using WebHW.Services;
 
@@ -32,13 +33,9 @@ namespace WebHW.Repositories
             return "OK";
         }
 
-        //public string FindTEST(int id) => DbContext.Employees.Include(e => e.ProjectEmployees)
-        //    .ThenInclude(pe => pe.Project).ToQueryString();
-
         public Employee Find(int id) => DbContext.Employees.
             Include(e => e.ProjectEmployees).
-            ThenInclude(pe => pe.Project).
-            FirstOrDefault(employee => employee.Id == id);
+            ThenInclude(pe => pe.Project).FirstOrDefault(employee => employee.Id == id);
 
         public void Remove(int id)
         {

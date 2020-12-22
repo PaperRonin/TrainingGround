@@ -25,7 +25,7 @@
                 <td>@employee.Phone</td>
                 <td>@employee.Company</td>
                 <td>@employee.Address</td>
-                <td>@Html.ActionLink("View", "EmployeeProjects", employee.Id, new { @class = "nav-link text-dark"})</td>
+                <td>@Html.ActionLink("View", "EmployeeProjects", new {id = employee.Id}, new { @class = "nav-link text-dark"})</td>
             </tr>
         }
     </tbody>

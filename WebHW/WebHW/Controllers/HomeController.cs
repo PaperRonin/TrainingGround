@@ -28,15 +28,9 @@ namespace WebHW.Controllers
             return View();
         }
 
-        //public string EmployeeProjects([FromServices] ProjectRepository employeeService, int id)
-        //{
-        //    var t = employeeService.Find(id);
-        //    return View(t);
-        //}
-
-        public IActionResult EmployeeProjects([FromServices] IEmployeeService employeeService, int id)
+        public IActionResult EmployeeProjects([FromServices] IEmployeeService employeeService, int id = 1)
         {
-            var t = employeeService.Find(id);
+            Employee t = employeeService.Find(id);
             return View(t);
         }
 
