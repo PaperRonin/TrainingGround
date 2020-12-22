@@ -32,6 +32,9 @@ namespace WebHW.Repositories
             return "OK";
         }
 
+        //public string FindTEST(int id) => DbContext.Employees.Include(e => e.ProjectEmployees)
+        //    .ThenInclude(pe => pe.Project).ToQueryString();
+
         public Employee Find(int id) => DbContext.Employees.
             Include(e => e.ProjectEmployees).
             ThenInclude(pe => pe.Project).
