@@ -8,8 +8,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using WebHW.DataBase;
+using WebHW.DataBase.Repositories;
 using WebHW.Middleware;
-using WebHW.Repositories;
 using WebHW.Services;
 
 namespace WebHW
@@ -29,6 +30,7 @@ namespace WebHW
             services.AddDbContext<WebHwDbContext>(x =>
                 x.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddMvc(options => options.EnableEndpointRouting = false);
+            services.AddTransient<IWebHWContext, WebHwDbContext>();
             services.AddTransient<IProjectService, ProjectRepository>();
             services.AddTransient<IEmployeeService, EmployeeRepository>();
         }

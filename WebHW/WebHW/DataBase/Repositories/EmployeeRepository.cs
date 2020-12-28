@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.EntityFrameworkCore;
+using WebHW.Models;
 using WebHW.Services;
 
-namespace WebHW.Repositories
+namespace WebHW.DataBase.Repositories
 {
     public class EmployeeRepository : IEmployeeService
     {
-        private WebHwDbContext DbContext { get; }
-        public EmployeeRepository(WebHwDbContext context)
+        private IWebHWContext DbContext { get; }
+        public EmployeeRepository(IWebHWContext context)
         {
             DbContext = context;
         }
@@ -20,9 +20,11 @@ namespace WebHW.Repositories
         {
             try
             {
-                //project validation;
-                //throw (new Exception("Message"));
-                DbContext.Employees.Add(employee);
+                if (DbContext.Employees.Any(x => x.Id == employee.Id))
+                {
+                    throw (new Exception("Employee with such id already exists"));
+                }
+                var t = DbContext.Employees.Add(employee);
                 DbContext.SaveChanges();
             }
             catch (Exception e)

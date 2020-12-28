@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
 
 #nullable disable
 
-namespace WebHW
+namespace WebHW.Models
 {
     public  class Employee
     {
@@ -25,13 +24,7 @@ namespace WebHW
         {
             get
             {
-                var list = new List<Project>();
-                foreach (var pe in ProjectEmployees)
-                {
-                    list.Add(pe.Project);
-                }
-
-                return list;
+                return ProjectEmployees.Select(pe => pe.Project).ToList();
             }
         }
 

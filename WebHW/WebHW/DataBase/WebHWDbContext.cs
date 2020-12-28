@@ -1,12 +1,11 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
+﻿using Microsoft.EntityFrameworkCore;
+using WebHW.Models;
 
 #nullable disable
 
-namespace WebHW
+namespace WebHW.DataBase
 {
-    public class WebHwDbContext : DbContext
+    public class WebHwDbContext : DbContext, IWebHWContext
     {
         public WebHwDbContext(DbContextOptions<WebHwDbContext> options) : base(options) { }
 
